@@ -4,22 +4,22 @@
 	<meta charset="utf-8"/>
 		<title>Lab 9: Random Numbers and if...else if...else With Testing</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
+
         <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="../../../css/font-awesome.min.css"/>
-        
+
         <!-- Bootstrap -->
         <link href="../../../css/bootstrap.min.css" rel="stylesheet"/>
         <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-        
+
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
          <script src="js/html5shiv.js"></script>
          <script src="js/respond.min.js"></script>
          <![endif]-->
-        
-        
+
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
         <script src="../../../js/jquery.min.js"></script>
@@ -34,7 +34,7 @@
    <div class="mx-auto" style="width: 1400px; margin-left: 15px">
     <h1>Lab 9: Random Numbers and <code>if</code>...<code>else if</code>...<code>else</code> With Testing</h1>
     <hr>
-    <p>Due Sunday, March 01 at 11:59 PM</p>
+    <p>Due Sunday, October 04 at 11:59 PM</p>
 
     <h2>Goals for This Lab</h2>
     <p>By the time you have completed this work, you should be able to:</p>
@@ -53,7 +53,7 @@
       <li><a href="LetterGradeTest.java"><code>LetterGradeTest.java</code></a></li>
       <li><a href="collaborators.txt"><code>collaborators.txt</code></a></li>
     </ul>
-	
+
 	<b>Rubric (150 points):</b>
 	<ul>
       <li>Guess.java:        		<b>40%</b></li>
@@ -63,14 +63,14 @@
 	  <li>LetterGradeTest.java: 	<b>26%</b></li>
     </ul>
     <hr>
-    
+
     <h2>Step-by-Step Instructions</h2>
 	<br/>
     <h4><b>Step 1: Edit <a href="Guess.java"><code>Guess.java</code></a></b></h4>
     <p>
       Download the <a href="Guess.java"><code>Guess.java</code></a> file, and open it in jGrasp (or a text editor of your choice).
-      This program will ask the user to guess a number between <code>0</code> and <code>2</code> inclusive, and will report if the user's guess is the same as some number 
-	  the computer chose. A caveat is that while the computer is choosing a &ldquo;random&rdquo; number, it always chooses <code>0</code> when run interactively, 
+      This program will ask the user to guess a number between <code>0</code> and <code>2</code> inclusive, and will report if the user's guess is the same as some number
+	  the computer chose. A caveat is that while the computer is choosing a &ldquo;random&rdquo; number, it always chooses <code>0</code> when run interactively,
 	  as it will always use the same &ldquo;seed&rdquo; value of <code>123456</code>. Example output of the program is shown below, with user input shown in <b>bold</b>:
     </p>
 <pre>
@@ -85,7 +85,7 @@ Guess a number between 0 and 2, inclusive: <b>0</b>
 Guess is correct!
 </pre>
     <br/>
-	
+
     <h4><b>Step 2: Open <a href="GuessTest.java"><code>GuessTest.java</code></a> as a Test File</b></h4>
     <p>
       Download the <a href="GuessTest.java"><code>GuessTest.java</code></a> file, being sure to put it in the same folder/directory as your <code>Guess.java</code> file.
@@ -101,7 +101,7 @@ Guess is correct!
       You do not need to write any of your tests in <code>GuessTest.java</code>.
     </p>
 	<br/>
-	
+
     <h4><b>Step 3: Edit <a href="CompareNums.java"><code>CompareNums.java</code></a></b></h4>
      <p>
       Download the <a href="CompareNums.java"><code>CompareNums.java</code></a> file, and open it in jGrasp (or a text editor of your choice).
@@ -132,7 +132,7 @@ The first integer is greater than the second integer.
 </pre>
     <p></p>
 	<br/>
-	
+
 	<h4><b>Step 4: Open <a href="CompareNumsTest.java"><code>CompareNumsTest.java</code></a> as a Test File, and Edit It</b></h4>
      <p>
       Download the <a href="CompareNumsTest.java"><code>CompareNumsTest.java</code></a> file, being sure to put it in the same folder/directory as your <code>CompareNums.java</code> file.
@@ -141,12 +141,12 @@ The first integer is greater than the second integer.
       You need to write a number of tests in this file, and all of them must pass.
       The comments in the file provide more details.
     </p>
-	<br/>	
-	
+	<br/>
+
 	<h4><b>Step 5: Edit <a href="LetterGrade.java"><code>LetterGrade.java</code></a></b></h4>
     <p>
       Download the <a href="LetterGrade.java"><code>LetterGrade.java</code></a> file, and open it in jGrasp (or a text editor of your choice).
-      You will need to implement a method that takes a percentage between <code>0.0</code> and <code>100.0</code>, and returns the appropriate letter grade as a 
+      You will need to implement a method that takes a percentage between <code>0.0</code> and <code>100.0</code>, and returns the appropriate letter grade as a
 	  <code>String</code> (e.g., &ldquo;A&rdquo;, &ldquo;A-&rdquo;, &ldquo;B+&rdquo;, etc.).
       The letter grade assignment should be based on the table in the second page of the <a href="../../syllabus.pdf">syllabus</a>.
       You may <b>not</b> modify the code in the <code>main</code> method.
@@ -164,7 +164,7 @@ Enter grade as percentage: <b>79.4</b>
 Letter grade: C+
 </pre>
 	<br/>
-	
+
 	<h4><b>Step 6: Open <a href="LetterGradeTest.java"><code>LetterGradeTest.java</code></a> as a Test File, and Edit It</b></h4>
     <p>
       Download the <a href="LetterGradeTest.java"><code>LetterGradeTest.java</code></a> file, being sure to put it in the same folder/directory as your <code>LetterGrade.java</code> file.
@@ -174,7 +174,7 @@ Letter grade: C+
       The comments in the file provide more details.
     </p>
 	<br/>
-	
+
     <h4><b>Step 7: Turn in Your Solution Using <a href="https://canvas.csun.edu">Canvas</a></b></h4>
     <p>
       Log into <a href="https://canvas.csun.edu">Canvas</a>, and go to the COMP 110L class.
@@ -190,7 +190,7 @@ Letter grade: C+
       <li><code>LetterGradeTest.java</code></li>
     </ul>
     <p>
-      In addition, if you collaborated with anyone else, be sure to download <a href="collaborators.txt"><code>collaborators.txt</code></a> 
+      In addition, if you collaborated with anyone else, be sure to download <a href="collaborators.txt"><code>collaborators.txt</code></a>
 	  and write the names of the people you collaborated with in the file, one per line.
       Please submit this file along with the other five files.
     </p>
