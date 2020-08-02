@@ -5,10 +5,10 @@ public class LetterGrade {
     // grade (e.g., "A", "A-", "B+", etc.).
     // The letter grade is determined by the given percentage, according
     // to the scale specified on page 2 of the class syllabus (available
-    // here: https://kyledewey.github.io/comp110-spring18/syllabus.pdf).
+    // here: https://mjalalit.github.io/comp110-fall2020/syllabus.pdf).
     // You may assume that the given percentage is between 0.0 and 100.0
     // TODO - write your code below this comment.
-    
+
     // DO NOT MODIFY main!
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
