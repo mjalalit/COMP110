@@ -59,25 +59,35 @@
 
     <h2>Step-by-Step Instructions</h2>
 	<br/>
-    <h4><b>Step 1: Get <a href="OperationsBetween.java"><code>OperationsBetween.java</code></a> Compiling</b></h4>
+    <h4><b>Step 1: Edit  <a href="SumMinMaxArgs.java"><code>SumMinMaxArgs.java</code></a> Compiling</b></h4>
     <p>
-      Download the <a href="OperationsBetween.java"><code>OperationsBetween.java</code></a> file, and open it in jGrasp (or a text editor of your choice).
-      This program takes two command-line arguments representing the minimum and maximum number in a numeric range.
-      Currently, the code does not compile. As a first step, you need to get this code to compile.
-      To this end, you'll need to implement the following:
+      Download the <a href="SumMinMaxArgs.java"><code>SumMinMaxArgs.java</code></a> file, and open it in jGrasp (or a text editor of your choice).
+      This program takes a number of command line arguments, parses them as ints, and then displays:
     </p>
-    <ul>
-      <li>Instance variables</li>
-      <li>Constructor</li>
-      <li>
-        A &ldquo;stub&rdquo; for the <code>sum</code> method, which will allow the call to <code>sum</code> in the <code>main</code> method to compile.
-        A stub has already been written for the <code>product</code> method; you should write something similar for <code>sum</code>.
-      </li>
-    </ul>
+    <ol>
+      <li>The arithmetic sum of the arguments</li>
+      <li>The smallest argument</li>
+      <li>The largest argument</li>
+    </ol>
     <p>
-      Once the code has the above elements and is compiling, you're ready to move on to the next step.
+      If you're unsure how to pass command-line arguments to a program with jGrasp, see <a href="../../resources/jgrasp_command_line_arguments">this tutorial</a>.
+      Example output of this program with the command-line arguments <code>1 2 3 4 5 </code> is shown below:
     </p>
     <br/>
+    <pre>Sum: 15
+      Min: 1
+      Max: 5
+      </pre>
+
+      <br/>
+      <p>
+        Further example output for the command-line arguments <code> 87 23 42 91 -4 <code> is shown below:
+      </p>
+      <pre>Sum: 239
+      Min: -4
+      Max: 91
+      </pre>
+
 
     <h4><b>Step 2: Implement the <code>sum</code> Method</b></h4>
    <p>
