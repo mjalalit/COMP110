@@ -1,4 +1,5 @@
 public class SumMinMaxArgs {
+    private int[] array;
     // You will need to write the following:
     //
     // 1. A constructor that takes a reference to an array,
@@ -28,7 +29,7 @@ public class SumMinMaxArgs {
     //
     // TODO - write your code below
 
-    
+
     // DO NOT MODIFY parseStrings!
     public static int[] parseStrings(String[] strings) {
         int[] retval = new int[strings.length];
