@@ -4,11 +4,11 @@
 	<meta charset="utf-8"/>
 		<title>Lab 19: super in Methods and Polymorphism</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
-        <link rel="stylesheet" href="../../../css/font-awesome.min.css"/>        
+
+        <link rel="stylesheet" href="../../../css/font-awesome.min.css"/>
         <!-- Bootstrap -->
         <link href="../../../css/bootstrap.min.css" rel="stylesheet"/>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="../../../js/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="../../../js/bootstrap.min.js"></script>
@@ -21,7 +21,7 @@
    <div class="mx-auto" style="width: 1400px; margin-left: 15px">
     <h1>Lab 19: <code>super</code> in Methods and Polymorphism</h1>
     <hr>
-    <p>Due Tuesday, April 28 at 11:59 PM</p>
+    <p>Due Tuesday, November 24 at 11:59 PM</p>
 
     <h2>Goals for This Lab</h2>
     <p>By the time you have completed this work, you should be able to:</p>
@@ -40,7 +40,7 @@
       <li><a href="CircleMain.java"><code>CircleMain.java</code></a></li>
       <li><a href="collaborators.txt"><code>collaborators.txt</code></a></li>
     </ul>
-	
+
 	<b>Rubric(150 points):</b>
 	<ul>
       <li>UseSuperSub.java:   			<b>25</b></li>
@@ -49,7 +49,7 @@
 	  <li>CirclePrecomputedArea.java: 	<b>60</b></li>
     </ul>
     <hr>
-    
+
     <h2>Step-by-Step Instructions</h2>
 	<br/>
     <h4><b>Step 1: Download and Open the <a href="UseSuperBase.java"><code>UseSuperBase.java</code></a> File</b></h4>
@@ -58,14 +58,14 @@
       Note that you should <b>not</b> edit this file, though you will need to be aware of the code it contains.
     </p>
     <br/>
-	
+
     <h4><b>Step 2: Download and Open the <a href="UseSuperMain.java"><code>UseSuperMain.java</code></a> File</b></h4>
     <p>
       Download the <a href="UseSuperMain.java"><code>UseSuperMain.java</code></a> file, and open it in jGRASP (or a text editor of your choice).
       Note that you should <b>not</b> edit this file, though you will need to be aware of the code it contains.
     </p>
 	<br/>
-	
+
     <h4><b>Step 3: Edit <a href="UseSuperSub.java"><code>UseSuperSub.java</code></a></b></h4>
      <p>
       Download the <a href="UseSuperSub.java"><code>UseSuperSub.java</code></a> file, and open it in jGRASP (or a text editor of your choice).
@@ -74,7 +74,7 @@
       Once you have your code working correctly, <a href="UseSuperMain.java"><code>UseSuperMain.java</code></a> should produce the output <code>All ok</code> when run.
     </p>
 	<br/>
-	
+
 	<h4><b>Step 4: Get <a href="CircleMain.java"><code>CircleMain.java</code></a> Working</b></h4>
     <p>
       Download the <a href="CircleMain.java"><code>CircleMain.java</code></a> file, and open it in jGRASP (or a text editor of your choice).
@@ -91,16 +91,16 @@
         Compute the area ahead of time and save it elsewhere (in <a href="CirclePrecomputedArea.java"><code>CirclePrecomputedArea.java</code></a>).
         Return this saved value instead of computing the area on demand.
         The area needs to be recomputed if the radius of the circle ever changes.
-        This approach allows us to avoid needing to recompute the area each time we need it, but there is a tradeoff - we end up recomputing the area each time 
+        This approach allows us to avoid needing to recompute the area each time we need it, but there is a tradeoff - we end up recomputing the area each time
 		the radius changes, and we need to store space for an extra instance variable to keep track of the area.
       </li>
     </ol>
     <p>
-      Both of these above approaches are unified under a single abstract class, namely <a href="Circle.java"><code>Circle.java</code></a>, which has an 
+      Both of these above approaches are unified under a single abstract class, namely <a href="Circle.java"><code>Circle.java</code></a>, which has an
 	  abstract <code>getArea</code> method. As to which of the above approaches is better depends on exactly how the code is used.
       If we never need the area, then <a href="CircleDynamicArea.java"><code>CircleDynamicArea.java</code></a> is best.
       If we need the area quite frequently, then <a href="CirclePrecomputedArea.java"><code>CirclePrecomputedArea.java</code></a> is best.
-      Thanks to polymorphism, we can define code that works with <code>Circle</code>s, which will work no matter the particular 
+      Thanks to polymorphism, we can define code that works with <code>Circle</code>s, which will work no matter the particular
 	  implementation (either <a href="CircleDynamicArea.java"><code>CircleDynamicArea.java</code></a> or <a href="CirclePrecomputedArea.java">
 	  <code>CirclePrecomputedArea.java</code></a>).
       This allows to to experiment with both versions and see which is best, without any changes to code that operates on <code>Circle</code>s.
@@ -122,10 +122,10 @@ Initial dynamic area: 387.07563084879837
 Initial precomputed area: 387.07563084879837
 Reset dynamic area: 31353.126098752677
 Reset precomputed area: 31353.126098752677
-</pre>  
+</pre>
     <p></p>
 	<br/>
-	
+
 	<h4><b>Step 5: Turn in Your Solution Using <a href="https://canvas.csun.edu">Canvas</a></b></h4>
     <p>
       Log into <a href="https://canvas.csun.edu">Canvas</a>, and go to the COMP 110L class.
@@ -139,7 +139,7 @@ Reset precomputed area: 31353.126098752677
       <li><code>CirclePrecomputedArea.java</code></li>
     </ul>
     <p>
-      In addition, if you collaborated with anyone else, be sure to download <a href="collaborators.txt"><code>collaborators.txt</code></a> 
+      In addition, if you collaborated with anyone else, be sure to download <a href="collaborators.txt"><code>collaborators.txt</code></a>
 	  and write the names of the people you collaborated with in the file, one per line. Please submit this file along with the other four files.
     </p>
     <p>
@@ -148,4 +148,3 @@ Reset precomputed area: 31353.126098752677
 	</div>
   </body>
 </html>
-
