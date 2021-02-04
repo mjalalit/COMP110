@@ -11,4 +11,5 @@ public class DoubleParrot
         String line2 = in.nextLine();
         System.out.println(line1 + " " + line2);
     }
+    
 }
