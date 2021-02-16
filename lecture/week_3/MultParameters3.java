@@ -3,6 +3,7 @@ public class MultParameters3 {
     // takes a long and a double, and binds their values to
     // the variables `myLong` and `myDouble`
     public static double multParameters3(long myLong, double myDouble) {
+    
         return myLong * myDouble;
     }
 
