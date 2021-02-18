@@ -14,6 +14,6 @@ public class HasInstance2 {
         HasInstance2 b = new HasInstance2(8);
 
         a.printInt();
-        b.printInt();
+        printInt();
     }
 }
