@@ -7,7 +7,8 @@ public class RandomExampleWithSeed {
         System.out.print("Enter seed: ");
         long seed = input.nextLong();
         Random r = new Random(seed);
-        int num = r.nextInt(10);
+        int num = r.nextInt();
         System.out.println("Random number between 0 and 9 inclusive: " + num);
+        
     }
 }
