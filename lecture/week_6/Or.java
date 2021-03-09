@@ -1,6 +1,7 @@
 public class Or {
     public static void main(String[] args) {
         boolean trueTrue = true || true;
+        
         boolean trueFalse = true || false;
         boolean falseTrue = false || true;
         boolean falseFalse = false || false;
