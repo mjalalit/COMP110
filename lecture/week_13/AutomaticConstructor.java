@@ -3,7 +3,7 @@ public class AutomaticConstructor {
     // constructors, Java automatically
     // defines the following constructor:
     //
-    // public AutomaticConstructor() {}
+    //public AutomaticConstructor() {}
     //
     
     public void printSomething() {
