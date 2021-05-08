@@ -293,28 +293,7 @@ public class Class23 {
 <pre style="color:red;">Method <code>m</code> of <code>Class23</code> is annotated to throw <code>Class22</code>, but it will never throw <code>Class22</code>.
 </pre>
       </li>
-      <li>
-        What is wrong with the following code, if anything?
-<pre>public class Class24 extends Exception {}
 
-public class Class25 {
-  public static void throwsException() throws Class24 {
-    throw new Class24();
-  }
-  public static int m() throws Class24 {
-    try {
-      throwsException();
-    } catch (Class24 e) {
-      return 1;
-    }
-    return 0;
-  }
-}
-</pre>
-<pre style="color:red;">While a <code>Class24</code> exception is thrown within the <code>m</code> method of <code>Class25</code>, this exception will always be caught, so <code>m</code> will never throw it.
-The <code>throws Class24</code> annotation on <code>m</code> needs to be removed.
-</pre>
-      </li>
 
       <li>
         What is wrong with the following code, if anything?
