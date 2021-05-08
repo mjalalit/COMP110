@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<!-- saved from url=(0087)https://kyledewey.github.io/comp110-spring18/exams/final/questions_without_answers.html -->
+<!-- saved from url=(0087)https://mebrahimii.github.io/comp110-spring2021/exams/final/questions_with_answers.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Written Final Exam Review Questions (Without Answers)</title>
+    <title>Written Final Exam Review Questions (With Answers)</title>
   </head>
 
-  <body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
-    <h1>Written Final Exam Review Questions (Without Answers)</h1>
+  <body data-new-gr-c-s-check-loaded="14.1009.0" data-gr-ext-installed="">
+    <h1>Written Final Exam Review Questions (With Answers)</h1>
     <p>
+      The written final exam will be Tuesday, May 18, 2021 from 08:00 AM - 10:00 AM, online via Canvas and Zoom.
       The written portion will require you to read and understand code, as well as answer short-answer questions related to programming.
       You may also be asked to write short amounts of code.
     </p>
+    <p>
+      You may have access to all the lecture notes in Canvas.
+    </p>
+
     <p>
       The exam is <b>cumulative</b>, but it is biased towards material covered since the last exam.
       The exam will be composed of questions based off of the following sources:
@@ -17,8 +22,8 @@
     <ul>
       <li>This review</li>
       <li><b>All</b> labs</li>
-      <li>The lab exam 1 & 2 review</a></li>
-      <li>The midterm review</a></li>
+      <li><a href="exams/Midterm/Midterm Review Questions (without Answers).html">Midterm Review Questions (without Answers)</li>
+      <li><a href="exams/Midterm/Midterm Review Questions (with Answers).html">Midterm Review Questions (with Answers).html</li>
     </ul>
     <p>
       All topics which could potentially be on the exam are somehow covered by one of the above sources.
@@ -39,6 +44,7 @@ int[] arr2 = arr1;
         <p>
           Write a memory diagram representing how memory “looks” after the above code snippet is executed.
         </p>
+        <img src="./Written Final Exam Review Questions (With Answers)_files/basic_array.png">
       </li>
       <li>
         <p>
@@ -52,6 +58,7 @@ arr2[2] = 7;
         <p>
           Write a memory diagram representing how memory “looks” after the above code snippet is executed.
         </p>
+        <img src="./Written Final Exam Review Questions (With Answers)_files/reassignment_array.png">
       </li>
       <li>
         <p>
@@ -66,6 +73,7 @@ int[][] arr = new int[][]{a, b, c, d};
         <p>
           Write a memory diagram representing how memory “looks” after the above code snippet is executed.
         </p>
+        <img src="./Written Final Exam Review Questions (With Answers)_files/complex_array.png">
       </li>
       <li>
         <p>
@@ -94,6 +102,7 @@ int[][] arr = new int[][]{a, b, c, d};
           Write a memory diagram representing how memory “looks” when <code>// HERE</code> is reached.
           You do <b>not</b> need to include <code>args</code> or <code>this</code> in your diagram.
         </p>
+        <img src="./Written Final Exam Review Questions (With Answers)_files/instances.png">
       </li>
       <li>
         What is wrong with the following code, if anything?
@@ -106,6 +115,29 @@ int[][] arr = new int[][]{a, b, c, d};
 
 public class Class2 extends Class1 {}
 </pre>
+<pre style="color:red;">  <code>Class2</code> does not define a constructor that takes an <code>int</code>.
+</pre>
+      </li>
+      <li>
+        What is wrong with the following code, if anything?
+<pre>public class Class3 {
+  protected int x;
+  public Class3(int x) {
+    this.x = x;
+  }
+}
+
+public class Class4 extends Class3 {
+  public Class4(int x) {
+    super(x);
+  }
+  public int getX() {
+    return x;
+  }
+}
+</pre>
+<pre style="color:red;">No problems; <code>Class4</code> now has access to <code>x</code>, since <code>x</code> is <code>protected</code>.
+</pre>
       </li>
       <li>
         What is wrong with the following code, if anything?
@@ -114,6 +146,8 @@ public class Class2 extends Class1 {}
 }
 
 public class Class6 extends Class5 {}
+</pre>
+<pre style="color:red;"><code>Class6</code> does not override <code>m</code>.
 </pre>
       </li>
       <li>
@@ -124,6 +158,8 @@ public class Class6 extends Class5 {}
 
 public abstract class Class8 extends Class7 {}
 </pre>
+<pre style="color:red;">No problem; since <code>Class8</code> is <code>abstract</code> it does not need to implement all <code>abstract</code> methods.
+</pre>
       </li>
       <li>
         What is wrong with the following code, if anything?
@@ -132,6 +168,8 @@ public abstract class Class8 extends Class7 {}
 }
 
 public abstract class Class9 implements Interface1 {}
+</pre>
+<pre style="color:red;">No problem; since <code>Class9</code> is declared <code>abstract</code>, it does not need to override <code>m</code>.
 </pre>
       </li>
       <li>
@@ -142,6 +180,8 @@ public abstract class Class9 implements Interface1 {}
 
 public class Class10 implements Interface2 {}
 </pre>
+<pre style="color:red;"><code>Class10</code> is not <code>abstract</code> and does not override <code>m</code>.
+</pre>
       </li>
       <li>
         What is wrong with the following code, if anything?
@@ -151,6 +191,8 @@ public class Class12 extends Class11 {
     Class11 x = new Class12();
   }
 }
+</pre>
+<pre style="color:red;">No problems.  <code>Class12</code> is-a <code>Class11</code>, so an instance of <code>Class12</code> can be assigned to a variable of type <code>Class11</code> (polymorphism).
 </pre>
       </li>
       <li>
@@ -179,6 +221,10 @@ public class Class13 {
   }
 }
 </pre>
+<pre style="color:red;">foo
+bar
+bar
+</pre>
       </li>
       <li>
         What is the output of the <code>main</code> method of <code>Class16</code> below?
@@ -202,6 +248,11 @@ public class Class16 {
   }
 }
 </pre>
+<pre style="color:red;">1
+2
+4
+5
+</pre>
       </li>
       <li>
         What is wrong with the following code, if anything?
@@ -212,6 +263,8 @@ public class Class19 {
     throw new Class18();
   }
 }
+</pre>
+<pre style="color:red;"><code>Class18</code> does not inherit from <code>Exception</code>.
 </pre>
       </li>
       <li>
@@ -224,6 +277,8 @@ public class Class21 {
   }
 }
 </pre>
+<pre style="color:red;">Method <code>m</code> of <code>Class21</code> is not annotated with <code>throws Class20</code>, but it does throw <code>Class20</code>.
+</pre>
       </li>
       <li>
         What is wrong with the following code, if anything?
@@ -235,42 +290,7 @@ public class Class23 {
   }
 }
 </pre>
-      </li>
-      <li>
-        What is wrong with the following code, if anything?
-<pre>public class Class24 extends Exception {}
-
-public class Class25 {
-  public static void throwsException() throws Class24 {
-    throw new Class24();
-  }
-  public static int m() throws Class24 {
-    try {
-      throwsException();
-    } catch (Class24 e) {
-      return 1;
-    }
-    return 0;
-  }
-}
-</pre>
-      </li>
-      <li>
-        What is wrong with the following code, if anything?
-<pre>public class Class26 extends Exception {}
-
-public class Class27 {
-  public static void throwsException() throws Class26 {
-    throw new Class26();
-  }
-  public static int m() throws Class26 {
-    try {
-      throwsException();
-    } catch (Class26 e) {
-      return 1;
-    }
-  }
-}
+<pre style="color:red;">Method <code>m</code> of <code>Class23</code> is annotated to throw <code>Class22</code>, but it will never throw <code>Class22</code>.
 </pre>
       </li>
       <li>
@@ -292,6 +312,8 @@ public class Class28 {
   }
 }
 </pre>
+<pre style="color:red;">Does not close the input file (missing <code>input.close()</code>).
+</pre>
       </li>
       <li>
         What is wrong with the following code, if anything?
@@ -308,6 +330,9 @@ public class Class29 {
     input.close();
   }
 }
+</pre>
+<pre style="color:red;">In the event that there is a problem reading the file (but not opening the file), this will fail to close the file.
+The <code>.close()</code> should be wrapped in a <code>finally</code> block, as in <a href="https://mebrahimii.github.io/comp110-spring2021/lecture/week_15/WriteStringsFinally.java">this example</a>.
 </pre>
       </li>
     </ol>
