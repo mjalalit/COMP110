@@ -315,28 +315,7 @@ public class Class25 {
 The <code>throws Class24</code> annotation on <code>m</code> needs to be removed.
 </pre>
       </li>
-      <li>
-        What is wrong with the following code, if anything?
-<pre>public class Class26 extends Exception {}
 
-public class Class27 {
-  public static void throwsException() throws Class26 {
-    throw new Class26();
-  }
-  public static int m() throws Class26 {
-    try {
-      throwsException();
-    } catch (Class26 e) {
-      return 1;
-    }
-  }
-}
-</pre>
-<pre style="color:red;">This will not compile, as Java is not smart enough to know that <code>throwsException</code> will <i>always</i> throw an exception.
-If <code>throwsException</code> happened to <i>not</i> throw an exception, method <code>m</code> would not return anything.
-However, <code>m</code> must return an <code>int</code>.
-</pre>
-      </li>
       <li>
         What is wrong with the following code, if anything?
 <pre>import java.io.File;
