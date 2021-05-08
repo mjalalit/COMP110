@@ -22,8 +22,8 @@
     <ul>
       <li>This review</li>
       <li><b>All</b> labs</li>
-      <li><a href="exams/Midterm/Midterm Review Questions (without Answers).html">Midterm Review Questions (without Answers)</li>
-      <li><a href="exams/Midterm/Midterm Review Questions (with Answers).html">Midterm Review Questions (with Answers).html</li>
+      <li>The <a href="https://mebrahimii.github.io/comp110-spring2021/exams/lab_1/questions_with_answers.html">lab exam 1 review</a></li>
+      <li>The <a href="https://mebrahimii.github.io/comp110-spring2021/exams/midterm_2_practice/questions_with_answers.html">exam 2 review</a></li>
     </ul>
     <p>
       All topics which could potentially be on the exam are somehow covered by one of the above sources.
@@ -291,6 +291,50 @@ public class Class23 {
 }
 </pre>
 <pre style="color:red;">Method <code>m</code> of <code>Class23</code> is annotated to throw <code>Class22</code>, but it will never throw <code>Class22</code>.
+</pre>
+      </li>
+      <li>
+        What is wrong with the following code, if anything?
+<pre>public class Class24 extends Exception {}
+
+public class Class25 {
+  public static void throwsException() throws Class24 {
+    throw new Class24();
+  }
+  public static int m() throws Class24 {
+    try {
+      throwsException();
+    } catch (Class24 e) {
+      return 1;
+    }
+    return 0;
+  }
+}
+</pre>
+<pre style="color:red;">While a <code>Class24</code> exception is thrown within the <code>m</code> method of <code>Class25</code>, this exception will always be caught, so <code>m</code> will never throw it.
+The <code>throws Class24</code> annotation on <code>m</code> needs to be removed.
+</pre>
+      </li>
+      <li>
+        What is wrong with the following code, if anything?
+<pre>public class Class26 extends Exception {}
+
+public class Class27 {
+  public static void throwsException() throws Class26 {
+    throw new Class26();
+  }
+  public static int m() throws Class26 {
+    try {
+      throwsException();
+    } catch (Class26 e) {
+      return 1;
+    }
+  }
+}
+</pre>
+<pre style="color:red;">This will not compile, as Java is not smart enough to know that <code>throwsException</code> will <i>always</i> throw an exception.
+If <code>throwsException</code> happened to <i>not</i> throw an exception, method <code>m</code> would not return anything.
+However, <code>m</code> must return an <code>int</code>.
 </pre>
       </li>
       <li>
