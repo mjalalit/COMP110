@@ -1,6 +1,6 @@
 Lab 0 Quiz Questions
 
-The questions can be found at https://kyledewey.github.io/comp110-fall22/labs/lab_0/quiz.html
+The questions can be found at https://mjalalit.github.io/COMP110/labs/lab_0/quiz.html
 Provide your answers to the questions below, providing your answer starting on the line immediately after the prompt.
 For example:
 
@@ -98,5 +98,3 @@ For example:
 
 23.) Question 23
 23.answer)
-
-
