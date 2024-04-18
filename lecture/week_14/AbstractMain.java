@@ -3,7 +3,7 @@ public class AbstractMain {
         // Will not compile with this line uncommented,
         // since AbstractBase is an abstract class:
         //
-       //  AbstractBase base = new AbstractBase(5);
+      //  AbstractBase base = new AbstractBase(5);
 
         // This is ok, since AbstractSub is not an
         // abstract class, even though AbstractSub
