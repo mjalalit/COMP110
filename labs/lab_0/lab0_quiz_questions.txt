@@ -72,29 +72,3 @@ For example:
 16.answer)
 
 
-17.) Question 17
-17.answer)
-
-
-18.) Question 18
-18.answer)
-
-
-19.) Question 19
-19.answer)
-
-
-20.) Question 20
-20.answer)
-
-
-21.) Question 21
-21.answer)
-
-
-22.) Question 22
-22.answer)
-
-
-23.) Question 23
-23.answer)
